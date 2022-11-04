@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* Fonts */
+    --title: 'Inter', sans-serif;
+    --text: 'Lexend Deca', sans-serif;
+    
+    /* Colors */
+    --background: #090b1a;
+    --cardBackground: #1b1938;
+    --accent: #aa5cdb;
+    --accentTransp: #732ba092;
+    --white: #ffffff;
+    --paragraph: #ffffffbf;
+    --stats: #ffffff99;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    max-width: 530px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--text);
+    font-size: 15px;
+    text-align: center;
+}
+
+.container {
+    margin: 1.5em;
+    margin-top: 10em;
+    background-color: var(--cardBackground);
+    border: none;
+    border-radius: 10px;
+    min-width: 344.98px;
+    max-width: 345px;
+}
+
+.img-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 345px;
+}
+
+.overlay {
+    position: absolute;
+    top: -239px;
+    left: 0;
+    width: 345px;
+    height: 254px;
+    background-color: var(--accentTransp);
+    border-radius: 10px 10px 0 0;
+}
+
+.img {
+    width: 100%;
+    height: 253.21px;
+    min-width: 272px;
+    min-height: 200px;
+    max-height: 360px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+}
+
+.content {
+    padding: 2.5em 2.5em 1.5em 2.5em;
+}
+
+.title {
+    font-family: var(--title);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    color: var(--white);
+    margin-bottom: 1em;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.text {
+    color: var(--paragraph);
+    line-height: 1.8rem;
+    margin-bottom: 3em;
+}
+
+.benefit-number {
+    font-family: var(--title);
+    font-weight: 700;
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: .5em;
+}
+
+.benefit-text {
+    color: var(--stats);
+    text-transform: uppercase;
+    margin-bottom: 2.5em;
+}
+
+@media screen and (min-width: 992px) {
+    html {
+        height: 100%;
+    }
+    
+    body {
+        max-width: 992px;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 992px;
+        max-height: 360px;
+        margin: 0 auto;
+    }
+    
+    .img-container {
+        width: 50%;
+        border-radius: 0 10px 10px 0;
+    }
+    
+    .img {
+        border-radius: 0 10px 10px 0;
+        height: 345px;
+        max-height: 360px;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 345px;
+        width: 496px;
+        border-radius: 0 10px 10px 0;
+    }
+    
+    .content {
+        text-align: left;
+        width: 40%; 
+        padding: 3em 0 1em 4em;
+        margin-right: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .title {
+        font-size: 2rem;
+        line-height: 1.3em;
+        margin-bottom: .5em;
+    }
+    
+    .text {
+        font-size: .8rem;
+        line-height: 1.3rem;
+        margin-bottom: .5em;
+        margin-right: 4em;
+    }
+    
+    .benefits-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+        margin-right: 5em;
+    }
+    
+    .benefit-number {
+        font-size: 1.2rem;
+    }
+    
+    .benefit-text {
+        font-size: .7rem;
+    }
+}
